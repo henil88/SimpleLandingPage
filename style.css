@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body,html{
+
+body,
+html {
     width: 100%;
     height: 100%;
     font-family: Rubik;
 }
-.main{
+
+.main {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
 }
-.nav{
+
+.nav {
     width: 100%;
     height: 13vh;
     display: flex;
@@ -23,67 +28,141 @@ body,html{
     padding: 0 4vw;
     gap: 30px;
 }
-.nav h4{
-    font-size: 25px;
+
+.nav h4 {
+    font-size: 1.1vw;
     font-weight: 500;
 }
-.nav i{
-    font-size: 25px;
+
+.nav i {
+    font-size: 1.5vw;
     font-weight: 500;
     background-color: black;
     padding: 10px 10px;
     border-radius: 50%;
     color: #fff;
 }
-.center{
+
+.center {
     padding: 1vh 6vw;
 }
-.center h1{
-    font-size: 80px;
+
+.center h1 {
+    font-size: 5vw;
     font-weight: 400;
-    line-height: 92px;
+    line-height: 10.5vh;
 }
-.center-part-2{
+
+.center-part-2 {
     width: 100%;
     height: 20vh;
     margin-top: 2vh;
     display: flex;
     justify-content: space-between;
 }
-.center-part-2 p{
-    font-size: 20px;
+
+.center-part-2 p {
+    font-size: 1vw;
     font-weight: 450;
-    line-height: 30px;
+    line-height: 2.8vh;
 }
-.center-right{
+
+.center-right {
     width: 20vw;
 }
-.ele{
-    padding: 19px 0px;
+
+.ele {
+    padding: 18.2px 0px;
     border-top: 2px solid #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.ele a{
+
+.ele a {
     text-decoration: none;
     color: #000;
     font-weight: 450;
-    font-size: 20px;
+    font-size: 1.2vw;
 }
-.ele i{
-    font-size: 20px;
+
+.ele i {
+    font-size: 1.2vw;
     font-weight: 500;
     opacity: 0;
 }
-.ele:hover i{
+
+.ele:hover i {
     opacity: 1;
 }
-.ele:hover{
+
+.ele:hover {
     background-color: #b8b6b6;
 }
-.bottom{
-    height:34vh;
-   background-image: url(https://images.unsplash.com/photo-1540406018480-2dd1b01e7420?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-   background-position: 0 30%;
+
+.bottom {
+    height: 31.5vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1540406018480-2dd1b01e7420?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 0 30%;
+}
+
+@media(max-width:600px) {
+    .nav {
+        height: 10vh;
+    }
+
+    .nav h4 {
+        display: none;
+    }
+
+    .center {
+        padding: 1vh 6vw;
+    }
+
+    .center h1 {
+        font-size: 9vw;
+        line-height: 7vh;
+    }
+
+    .center-part-2 {
+        width: 100%;
+        height: 30vh;
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .center-part-2 p {
+        font-size: 3vw;
+        font-weight: 500;
+        line-height: 2.5vh;
+    }
+
+    .center-right {
+        width: 100%;
+        height: 18  vh;
+    }
+
+    .ele {
+        padding: 7px 0;
+        border-top: 1px solid #000;
+    }
+
+    .ele a {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .ele i {
+        font-size: 20px;
+        font-weight: 500;
+        opacity: 1;
+    }
+
+    .bottom {
+        height:35vh;
+    }
 }
