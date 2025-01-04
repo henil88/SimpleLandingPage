@@ -116,7 +116,9 @@ html {
     .nav h4 {
         display: none;
     }
-
+    .nav i{
+        font-size: 25px;
+    }
     .center {
         padding: 1vh 6vw;
     }
